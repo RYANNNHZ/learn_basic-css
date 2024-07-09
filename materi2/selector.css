@@ -1,0 +1,33 @@
+/* universal selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class selector */
+.header{
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* id selector */
+
+h3#about{
+    background-color: gold;
+}
+
+/* 
+child selector */
+p>i{
+    background-color: goldenrod;
+}
+
+
+/* decendant selector */
+p span{
+    background-color: brown;
+}
+/* 
+nth selector */
+li:nth-child(2){
+    background-color: blue;
+}

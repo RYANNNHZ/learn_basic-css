@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        span{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        span.block{
+            display: block;
+        }
+
+        span.inline-block{
+            display: inline-block;
+        }
+
+        span.none{
+            display: none;
+        }
+
+
+        .container{
+            background-color: aqua;
+            height: 400px;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .content{
+            background-color: azure;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>display inline</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam accusamus eveniet eligendi quisquam modi nihil vel recusandae assumenda fuga debitis magnam enim error, placeat repellendus excepturi adipisci fugiat doloribus quasi. Officia, hic magni! Magni, libero. Nobis nisi veritatis quia nemo earum unde, voluptatem vitae mollitia obcaecati eius exercitationem ducimus dolorem facilis excepturi porro eligendi sed error! Consequatur labore impedit sit nobis sunt iusto fugiat, asperiores, libero dolorum quam tempora sed distinctio totam beatae quos, repudiandae illum. Consequuntur non corrupti maxime vitae et ad reprehenderit quaerat similique ullam? Dolor laboriosam molestiae perspiciatis accusantium distinctio dicta aperiam voluptates omnis culpa explicabo?<span class="inline">box</span> <span class="inline">box</span> box ini akan mengikuti kelakuan si display nya</p>
+    <hr>
+    <h2>display block</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam accusamus eveniet eligendi quisquam modi nihil vel recusandae assumenda fuga debitis magnam enim error, placeat repellendus excepturi adipisci fugiat doloribus quasi. Officia, hic magni! Magni, libero. Nobis nisi veritatis quia nemo earum unde, voluptatem vitae mollitia obcaecati eius exercitationem ducimus dolorem facilis excepturi porro eligendi sed error! Consequatur labore impedit sit nobis sunt iusto fugiat, asperiores, libero dolorum quam tempora sed distinctio totam beatae quos, repudiandae illum. Consequuntur non corrupti maxime vitae et ad reprehenderit quaerat similique ullam? Dolor laboriosam molestiae perspiciatis accusantium distinctio dicta aperiam voluptates omnis culpa explicabo?<span class="block">box</span> <span class="block">box</span> box ini akan mengikuti kelakuan si display nya</p>
+    <hr>
+    <h2>display inline-block</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam accusamus eveniet eligendi quisquam modi nihil vel recusandae assumenda fuga debitis magnam enim error, placeat repellendus excepturi adipisci fugiat doloribus quasi. Officia, hic magni! Magni, libero. Nobis nisi veritatis quia nemo earum unde, voluptatem vitae mollitia obcaecati eius exercitationem ducimus dolorem facilis excepturi porro eligendi sed error! Consequatur labore impedit sit nobis sunt iusto fugiat, asperiores, libero dolorum quam tempora sed distinctio totam beatae quos, repudiandae illum. Consequuntur non corrupti maxime vitae et ad reprehenderit quaerat similique ullam? Dolor laboriosam molestiae perspiciatis accusantium distinctio dicta<span class="inline-block">box</span> <span class="inline-block">box</span> box ini akan mengikuti kelakuan si display nya</p>
+    <hr>
+    <h2>display none</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam accusamus eveniet eligendi quisquam modi nihil vel recusandae assumenda fuga debitis magnam enim error, placeat repellendus excepturi adipisci fugiat doloribus quasi. Officia, hic magni! Magni, libero. Nobis nisi veritatis quia nemo earum unde, voluptatem vitae mollitia obcaecati eius exercitationem ducimus dolorem facilis excepturi porro eligendi sed error! Consequatur labore impedit sit nobis sunt iusto fugiat, asperiores, libero dolorum quam tempora sed distinctio totam beatae quos, repudiandae illum. Consequuntur non corrupti maxime vitae et ad reprehenderit quaerat similique ullam? Dolor laboriosam molestiae perspiciatis accusantium distinctio dicta aperiam voluptates omnis culpa explicabo?<span class="none">box</span> <span class="none">box</span> box ini akan mengikuti kelakuan si display nya</p>
+    <hr>
+    <h2>display flex</h2>
+    <div class="container">
+        <div class="content">box</div>
+        <div class="content">box</div>
+        <div class="content">box</div>
+        <div class="content">box</div>
+        <div class="content">box</div>
+        <div class="content">box</div>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2:nth-child(1){
+    background-color: red;
+}
+
+h2:nth-child(2){
+    color: red;
+}
+
+h1{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#heading-1{
+    background-color: blue;
+}
+#heading-2{
+    background-color: #d62d2d;
+}
+#heading-3{
+    background-color: rgba(255, 150, 50, 0.5);
+}
+#heading-4{
+    background-color: hsla(150, 100, 50, 0,5);
+}
+
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class Examples</title>
+    <style>
+        /* Hover: Mengubah warna tombol saat pengguna mengarahkan kursor di atasnya */
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: green;
+        }
+
+        /* Nth-Child: Mengubah gaya setiap elemen ke-n pada daftar */
+        ul li:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        ul li:nth-child(even) {
+            background-color: white;
+        }
+
+        /* Focus: Mengubah gaya input saat mendapat fokus */
+        input {
+            padding: 10px;
+            border: 2px solid grey;
+        }
+        input:focus {
+            border-color: blue;
+            background-color: lightblue;
+        }
+
+        /* First-Child dan Last-Child: Mengubah gaya elemen pertama dan terakhir dalam sebuah kontainer */
+        .container div:first-child {
+            color: red;
+        }
+        .container div:last-child {
+            color: blue;
+        }
+
+        /* Not: Mengubah gaya elemen yang tidak sesuai dengan kriteria yang ditentukan */
+        .list-item {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: lightgrey;
+        }
+        .list-item:not(.special) {
+            background-color: white;
+        }
+
+        /* Visited: Mengubah warna tautan yang sudah dikunjungi pengguna */
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: purple;
+        }
+
+        /* Active: Mengubah gaya tautan saat sedang diklik */
+        a:active {
+            color: red;
+        }
+
+        /* First-of-Type: Mengubah gaya elemen pertama dari jenisnya dalam kontainer */
+        .container div:first-of-type {
+            font-weight: bold;
+        }
+
+        /* Last-of-Type: Mengubah gaya elemen terakhir dari jenisnya dalam kontainer */
+        .container div:last-of-type {
+            font-style: italic;
+        }
+
+        /* Only-Child: Mengubah gaya elemen jika hanya ada satu anak dalam kontainer */
+        .container div:only-child {
+            border: 2px solid black;
+        }
+
+        /* Disabled: Mengubah gaya elemen form yang dinonaktifkan */
+        input:disabled {
+            background-color: grey;
+        }
+
+        /* Enabled: Mengubah gaya elemen form yang diaktifkan */
+        input:enabled {
+            background-color: white;
+        }
+
+        /* Checked: Mengubah gaya elemen input yang dicentang */
+        input[type="checkbox"]:checked {
+            outline: 2px solid green;
+        }
+
+        /* Empty: Mengubah gaya elemen yang tidak memiliki anak */
+        .container p:empty {
+            background-color: yellow;
+        }
+
+        /* Target: Mengubah gaya elemen yang menjadi target tautan */
+        .target {
+            display: none;
+        }
+        .target:target {
+            display: block;
+            color: red;
+        }
+
+        /* In-Range: Mengubah gaya elemen input dengan nilai dalam rentang yang valid */
+        input[type="number"]:in-range {
+            background-color: lightgreen;
+        }
+
+        /* Out-of-Range: Mengubah gaya elemen input dengan nilai di luar rentang yang valid */
+        input[type="number"]:out-of-range {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-Class Examples</h1>
+
+    <!-- Hover -->
+    <div class="button">Hover me!</div>
+
+    <!-- Nth-Child -->
+    <h2>Nth-Child Example</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- Focus -->
+    <h2>Focus Example</h2>
+    <input type="text" placeholder="Click to focus">
+
+    <!-- First-Child dan Last-Child -->
+    <h2>First and Last Child Example</h2>
+    <div class="container">
+        <div>First item</div>
+        <div>Middle item</div>
+        <div>Last item</div>
+    </div>
+
+    <!-- Not -->
+    <h2>Not Example</h2>
+    <div class="list-item special">Special Item 1</div>
+    <div class="list-item">Normal Item 1</div>
+    <div class="list-item">Normal Item 2</div>
+    <div class="list-item special">Special Item 2</div>
+
+    <!-- Visited -->
+    <h2>Visited Example</h2>
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+    <!-- Active -->
+    <h2>Active Example</h2>
+    <a href="https://www.example.com" target="_blank">Active Link</a>
+
+    <!-- First-of-Type -->
+    <h2>First-of-Type Example</h2>
+    <div class="container">
+        <div>First of type</div>
+        <div>Another div</div>
+    </div>
+
+    <!-- Last-of-Type -->
+    <h2>Last-of-Type Example</h2>
+    <div class="container">
+        <div>Another div</div>
+        <div>Last of type</div>
+    </div>
+
+    <!-- Only-Child -->
+    <h2>Only-Child Example</h2>
+    <div class="container">
+        <div>Only child</div>
+    </div>
+
+    <!-- Disabled -->
+    <h2>Disabled Example</h2>
+    <input type="text" disabled placeholder="Disabled input">
+
+    <!-- Enabled -->
+    <h2>Enabled Example</h2>
+    <input type="text" placeholder="Enabled input">
+
+    <!-- Checked -->
+    <h2>Checked Example</h2>
+    <label>
+        <input type="checkbox" checked> Checked checkbox
+    </label>
+
+    <!-- Empty -->
+    <h2>Empty Example</h2>
+    <div class="container">
+        <p></p>
+    </div>
+
+    <!-- Target -->
+    <h2>Target Example</h2>
+    <a href="#target-element">Go to target element</a>
+    <div id="target-element" class="target">You have reached the target element!</div>
+
+    <!-- In-Range -->
+    <h2>In-Range Example</h2>
+    <input type="number" min="1" max="10" value="5">
+
+    <!-- Out-of-Range -->
+    <h2>Out-of-Range Example</h2>
+    <input type="number" min="1" max="10" value="15">
+
+</body>
+</html>
